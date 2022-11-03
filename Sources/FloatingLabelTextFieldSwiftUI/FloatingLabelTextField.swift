@@ -73,9 +73,6 @@ public struct FloatingLabelTextField: View {
                     self.isShowError = self.notifier.isRequiredField
                     self.validtionChecker = self.currentError.condition
                     self.editingChanged(self.isSelected)
-                    if !self.isSelected {
-                        UIResponder.currentFirstResponder?.resignFirstResponder()
-                    }
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         if let currentResponder = UIResponder.currentFirstResponder, let currentTextField = currentResponder.globalView as? UITextField{
                             arrTextFieldEditActions = self.notifier.arrTextFieldEditActions
