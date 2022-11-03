@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/kishanraja/FloatingLabelTextFieldSwiftUI'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kishanraja' => 'rajakishanrk1996@gmail.com' }
-  s.source           = { :git => 'https://github.com/cgalindo/FloatingLabelTextFieldSwiftUI.git' }
+  s.source           = { :git => 'https://github.com/kishanraja/FloatingLabelTextFieldSwiftUI.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/RajaKishan4'
 
   s.ios.deployment_target = '13.0'
